@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+  @layer utilities {
+    .drop-shadow-custom {
+      filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 1));
+    }
+  }
+</style>
+<style>
+  @font-face {
+    font-family: 'Figtree';
+    src: url('./fonts/Figtree-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Figtree';
+    src: url('./fonts/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  .font-figtree {
+    font-family: 'Figtree', sans-serif;
+  }
+</style>
+</head>
+<body class="bg-[#F4D04E] flex items-center justify-center h-screen">
+    <div class="bg-[#FFFFFF] flex flex-col gap-4 p-5 w-[384px] h-[522px] rounded-[20px] border border-1 drop-shadow-custom ">
+        <div class="h-[45%] w-full ">
+            <img class="w-full h-full object-cover rounded-[10px] " src="images/illustration-article.svg" alt="">
+        </div>
+        <div class="flex flex-col gap-3">
+            <div class="bg-[#F4D04E] w-fit px-3 py-1 rounded-[4px]">
+                <p class="text-[14px] font-bold font-figtree">Learning</p>
+            </div>
+            <p class="text-[14px] font-figtree">Published 21 Dec 2023</p>
+            <h1 class="text-gray-950 text-[24px] font-figtree font-[800]">HTML & CSS foundations</h1>
+            <p class="text-[16px] text-gray-500 font-figtree font-[500] ">
+                These languages are the backbone of every website, defining structure, content, and presentation.
+            </p>
+        </div>
+        <div class="flex items-center gap-3 pt-2">
+            <img class="rounded-full h-10 " src="images/image-avatar.png" alt="">
+            <p class="text-[14px] font-bold font-figtree">Umut Yavuz</p>
+        </div>
+    </div>
+</body>
+</html>
